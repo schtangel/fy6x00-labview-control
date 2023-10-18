@@ -24,13 +24,14 @@ python get-pip.py
 pip install pyserial
 ```
 
-**4. Downloading the Library**
+**4. Downloading the Library and Placing the Middleware Script**
    
 - In your command prompt or terminal, execute:
 ```
 git clone https://github.com/mattwach/fygen fygenlib
 ```
-- Alternatively, if you already have an attached version of the library, ensure it's located in a directory convenient for you.
+- After downloading, place the script `fygenmidware.py` into the directory that contains the `fygenlib` folder.
+- If you already have an attached version of the library, ensure it's located in a directory convenient for you, and then place the script in the same manner.
 
 ---
 
@@ -41,15 +42,15 @@ git clone https://github.com/mattwach/fygen fygenlib
 - Launch LabVIEW.
 - Open your VI associated with the generator control program.
 
-**6. Specifying the Path to the fygen Library**
+**6. Specifying the Path to the Middleware Script**
    
-- In the VI, find the control or field responsible for the library path.
-- Specify the absolute path to the `fygenlib` directory.
+- In the VI, find the control or field responsible for specifying the script path.
+- Specify the absolute path to the `fygenmidware.py` script.
 
 **7. Specifying the Python Version**
    
-- In the VI, find the appropriate control or field for the Python version.
-- Indicate your Python version (e.g., "3.9").
+- In the VI, locate the appropriate control or field for the Python version.
+- Indicate your Python version (e.g., "3.11").
 
 **8. Setting up Generator Connection Ports**
    
@@ -65,3 +66,7 @@ git clone https://github.com/mattwach/fygen fygenlib
 ---
 
 *Note:* Upon completion, the program will automatically configure each generator considering the defined phase shift. Proceed to configure your equipment according to the provided parameters.
+
+---
+
+You can now copy and paste the revised text into your Word document. Adjust the formatting in Word as needed.
