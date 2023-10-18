@@ -67,6 +67,3 @@ git clone https://github.com/mattwach/fygen fygenlib
 
 *Note:* Upon completion, the program will automatically configure each generator considering the defined phase shift. Proceed to configure your equipment according to the provided parameters.
 
----
-
-You can now copy and paste the revised text into your Word document. Adjust the formatting in Word as needed.
