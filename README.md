@@ -1,2 +1,67 @@
-# fy6x00-labview-control
-VI for set parameters into number of FY6x00 signal generators
+# LabVIEW VI to set up FeelTech FY6x00 Arbitrary Wave Generators
+
+**Goal:** To load identical settings into a number of FeelTech FY6x00 arbitrary wave generators and set a phase shift so that they all cover 360 degrees.
+
+### Step 1: Environment Setup
+
+**1. Installing Python3**
+   
+- Visit the official [Python](https://www.python.org/downloads/) website and download the latest version of Python 3.
+- Launch the installer and follow the on-screen instructions.
+
+**2. Installing pip**
+   
+- Typically, `pip` is already included in Python3 installations. If not, open your command prompt or terminal and run:
+``` 
+python get-pip.py
+```
+
+**3. Installing Dependencies**
+   
+- Open your command prompt or terminal.
+- Type and run:
+```
+pip install pyserial
+```
+
+**4. Downloading the Library**
+   
+- In your command prompt or terminal, execute:
+```
+git clone https://github.com/mattwach/fygen fygenlib
+```
+- Alternatively, if you already have an attached version of the library, ensure it's located in a directory convenient for you.
+
+---
+
+### Step 2: LabVIEW Setup
+
+**5. Opening the VI**
+   
+- Launch LabVIEW.
+- Open your VI associated with the generator control program.
+
+**6. Specifying the Path to the fygen Library**
+   
+- In the VI, find the control or field responsible for the library path.
+- Specify the absolute path to the `fygenlib` directory.
+
+**7. Specifying the Python Version**
+   
+- In the VI, find the appropriate control or field for the Python version.
+- Indicate your Python version (e.g., "3.9").
+
+**8. Setting up Generator Connection Ports**
+   
+- If necessary, add or remove connection ports using the relevant controls in the VI.
+- The program will automatically calculate the number of generators.
+
+**9. Running the Program**
+   
+- In the VI, input the desired parameters: frequency, output signal type, etc.
+- Choose the required connection ports.
+- Initiate the program execution.
+
+---
+
+*Note:* Upon completion, the program will automatically configure each generator considering the defined phase shift. Proceed to configure your equipment according to the provided parameters.
