@@ -48,7 +48,7 @@ git clone https://github.com/mattwach/fygen fygenlib
 
 ### 8. Setting up Generator Connection Ports
 
-- If necessary, add or remove connection ports using the relevant controls in the VI.
+- If necessary, add or remove connection ports adding or deleting arguments of "FY6900_Driver" block.
 - The program will automatically calculate the number of generators.
 
 ### 9. Running the Program
